@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,input_opencv.so -o input_opencv.so CMakeFiles/input_opencv.dir/input_opencv.cpp.o /usr/local/lib/libopencv_highgui.so.2.4.13 /usr/local/lib/libopencv_imgproc.so.2.4.13 /usr/local/lib/libopencv_core.so.2.4.13 -ldl -lm -lpthread -lrt -Wl,-rpath,/usr/local/lib: 
