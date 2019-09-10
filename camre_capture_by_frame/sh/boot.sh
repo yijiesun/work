@@ -1,4 +1,4 @@
-#!/bin/sh -v
+#!/bin/sh
 time3=$(date "+%Y-%m-%d %H:%M:%S")
 echo $time3 >> /home/pi/work/camre_capture_by_frame/log/login.txt
 cd /home/pi/work/camre_capture_by_frame/sh
