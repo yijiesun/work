@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
 	fstream ioFileWestaData;
 	fstream ioFileMoveDetect;
 	struct thread_data td;
-	vector<string>  dirVectorSaved;
+	//vector<string>  dirVectorSaved;
 	unsigned long long memFreeSize = 10000000;
 	struct statfs diskStatfs;
 	unsigned int freeBlocks = 5 * 1024;  //GB
@@ -89,7 +89,7 @@ int main(int argc, char* argv[])
 			cout << "\033[31m" << log_Time() << "[invalid]read dirc from save file:" << strbufs << endl;
 			break;
 		}
-		dirVectorSaved.push_back(strbufs);
+		//dirVectorSaved.push_back(strbufs);
     }
 
 	string strbufs;
@@ -135,6 +135,7 @@ int main(int argc, char* argv[])
 
 		if(!frame_cur.empty())
 		{
+
 			isCatchMove = false;
 			if (first)
 			{
@@ -156,7 +157,7 @@ int main(int argc, char* argv[])
 				t = gmtime(&tt);
 		
 				if (fileDay == -1)
-				{//按天创建主文件夹
+				{//按天创建主文件夹 初始化
 					fileDay = t->tm_mday;
 					char bufDay[100];
 					memset(bufDay, 0, 100);
@@ -166,40 +167,40 @@ int main(int argc, char* argv[])
 					dirsDay.str("");
 					dirsDay << addr << bufDay << "/";
 					int ret = mkdir(dirsDay.str().c_str(), 0775);//创建文件夹  
-					cout <<"\033[95m"<< log_Time() << "creat dir " << dirsDay.str() << endl;
+					cout <<"\033[95m"<< log_Time() << "creat day dir " << dirsDay.str() << endl;
 					if (ret < 0)
 					{
 						cout << "\033[31m" << log_Time() << "Could not create directory " << dirsDay.str() << "ret " << ret << endl;
 						//return EXIT_FAILURE;
 					}
-					dirVectorSaved.push_back(dirsDay.str());
+					//dirVectorSaved.push_back(dirsDay.str());
 					ioFileAll<< dirsDay.str()<<endl;
-					cout << "\033[35m" << log_Time() << "write " << dirsDay.str() << "to " << allDirectorsList.c_str() << endl;
+					//cout << "\033[35m" << log_Time() << "write " << dirsDay.str() << "to " << allDirectorsList.c_str() << endl;
 				}
-					
+				
 
 				//create directorys by time
 				if (fileDay != t->tm_mday)
-				{
-                                        fileDay = t->tm_mday;
+				{//按天创建主文件夹
+                    fileDay = t->tm_mday;
 					dirsDay.clear();
 					dirsDay.str("");
 					char bufDay[100];
 					memset(bufDay, 0, 100);
-					getTimesMin(bufDay,t);
+					getTimesDay(bufDay,t);
 					
 					dirsDay << addr << bufDay << "/";
 
 					int ret = mkdir(dirsDay.str().c_str(), 0775);//创建文件夹  
-					cout << "\033[95m" << log_Time() << "creat dir " << dirsDay.str() << endl;
+					cout << "\033[95m" << log_Time() << "creat day dir " << dirsDay.str() << endl;
 					if (ret < 0)
 					{
 						cout << "\033[31m" << log_Time() << "Could not create directory " << dirsDay.str() << "ret " << ret << endl;
 						//return EXIT_FAILURE;
 					}
-					dirVectorSaved.push_back(dirsDay.str());
+					//dirVectorSaved.push_back(dirsDay.str());
 					ioFileAll<< dirsDay.str()<<endl;
-					cout << "\033[35m" << log_Time() << "write " << dirsDay.str() << "to " << allDirectorsList.c_str() << endl;
+					//cout << "\033[35m" << log_Time() << "write " << dirsDay.str() << "to " << allDirectorsList.c_str() << endl;
 				}
 				
 				memset(bufSec, 0, 100);
@@ -217,9 +218,10 @@ int main(int argc, char* argv[])
 				//memFreeSize = freeSize;
 #endif
 				double whitePercent = moveDetect(frame_cur, frame_last, WID, HGT);
-				ioFileMoveDetect << bufSec <<"--" << whitePercent << endl;
+				
 				if (whitePercent >= PERCENT)
 				{
+					ioFileMoveDetect << bufSec << "--" << whitePercent << endl;
 					isCatchMove = true;
 #ifdef SAVE_ALL_IMG
 					imwrite(imgFullName.str().c_str(), frame_cur);
@@ -245,15 +247,15 @@ int main(int argc, char* argv[])
 					dirsSon << dirsDay.str() << bufSec << "/";
 
 					int ret = mkdir(dirsSon.str().c_str(), 0775);//创建文件夹  
-					cout << "\033[95m" << log_Time() << "creat dir " << dirsSon.str() << endl;
+					cout << "\033[95m" << log_Time() << "creat sec dir " << dirsSon.str() << endl;
 					if (ret < 0)
 					{
 						cout << "\033[31m" << log_Time() << "Could not create directory " << dirsSon.str() <<endl;
 
 					}
-					dirVectorSaved.push_back(dirsSon.str());
+					//dirVectorSaved.push_back(dirsSon.str());
 					ioFileAll << dirsSon.str() << endl;
-					cout << "\033[35m" << log_Time() << "write " << dirsSon.str() << "to " << allDirectorsList.c_str() << endl;
+					//cout << "\033[35m" << log_Time() << "write " << dirsSon.str() << "to " << allDirectorsList.c_str() << endl;
 				}
 				memset(bufSec, 0, 100);
 				getTimesSec(bufSec, t);

@@ -1,0 +1,318 @@
+2019-09-10 15:58:47
+2019-09-10 15:58:48	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-10 15:58:48	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-10 15:58:48	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-10 15:58:52	- Info  -	register ok
+SN : RAPI60c818b46ca0
+fastcode=975ecfee9de3952c4ae0e3fc6c672932
+SN : RAPI60c818b46ca0
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-10 17:20:32
+2019-09-10 17:20:32	* Error *	get mac address failed
+2019-09-10 17:20:32	* Error *	get mac failed
+SN : 
+2019-09-10 17:20:33	* Error *	get mac address failed
+2019-09-10 17:20:33	* Error *	get mac failed
+SN : 
+2019-09-10 17:20:34	* Error *	get mac address failed
+2019-09-10 17:20:34	* Error *	get mac failed
+SN : 
+2019-09-10 17:20:35	* Error *	get mac address failed
+2019-09-10 17:20:35	* Error *	get mac failed
+SN : 
+2019-09-10 17:20:36	* Error *	get mac address failed
+2019-09-10 17:20:36	* Error *	get mac failed
+SN : 
+2019-09-10 17:20:37	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-10 17:20:37	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-10 17:20:38	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-10 17:20:39	- Info  -	register ok
+SN : RAPI60c818b46ca0
+fastcode=975ecfee9de3952c4ae0e3fc6c672932
+SN : RAPI60c818b46ca0
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-10 17:36:49
+2019-09-10 17:36:49	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-10 17:36:49	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-10 17:36:49	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-10 17:36:50	- Info  -	register ok
+SN : RAPI60c818b46ca0
+fastcode=975ecfee9de3952c4ae0e3fc6c672932
+SN : RAPI60c818b46ca0
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:19:17
+2019-09-11 09:19:17	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:19:17	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:19:17	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:19:18	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+2019-09-11 09:24:57
+2019-09-11 09:24:57	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:24:57	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:24:57	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:24:57	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:29:49
+2019-09-11 09:29:49	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:29:49	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:29:50	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:29:50	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:31:57
+2019-09-11 09:31:57	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:31:57	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:31:57	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:31:58	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:33:20
+2019-09-11 09:33:20	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:33:20	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:33:20	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:33:20	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:37:14
+2019-09-11 09:37:14	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:37:14	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:37:14	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:37:14	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:42:13
+2019-09-11 09:42:14	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:42:14	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:42:14	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:42:14	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:45:07
+2019-09-11 09:45:08	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:45:08	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:45:08	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:45:08	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:50:36
+2019-09-11 09:50:36	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:50:36	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:50:36	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:50:36	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:54:17
+2019-09-11 09:54:17	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:54:17	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:54:17	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:54:18	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 09:58:06
+2019-09-11 09:58:06	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 09:58:06	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 09:58:06	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 09:58:06	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 10:04:01
+2019-09-11 10:04:01	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 10:04:01	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 10:04:01	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 10:04:02	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 10:11:20
+2019-09-11 10:11:20	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 10:11:20	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 10:11:20	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 10:11:20	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....
+2019-09-11 10:15:45
+2019-09-11 10:15:45	= Debug =	[http_call] attempt to connect server: rapi.ephapi.oray.net/device/register
+2019-09-11 10:15:45	= Debug =	[http_call] create new stream because alive streams is empty.
+2019-09-11 10:15:45	- Info  -	[http_call] connect server: rapi.ephapi.oray.net:443(121.40.234.27)
+  . Performing the SSL/TLS handshake...
+ ok
+  . Verifying peer X.509 certificate...
+ ok
+2019-09-11 10:15:46	- Info  -	register ok
+SN : RAPI60c818b46ca8
+fastcode=ab0ba73ed82407bd41e6a5810a397a01
+SN : RAPI60c818b46ca8
+restart phddns service success !
+**********nat123 for linux***************
+initing...
+init sucess
+loading login...
+nat123 service is running....

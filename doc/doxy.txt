@@ -1,0 +1,111 @@
+树莓派4B装机
+
+2019年9月2日
+15:31
+
+0 工具
+	SD FORMAT https://www.sdcard.org/downloads/formatter/eula_windows/index.html
+	win32diskimager https://jaist.dl.sourceforge.net/project/win32diskimager/Archive/win32diskimager-1.0.0-install.exe
+1 wifi ssh 配置https://www.jianshu.com/p/aff561ea1226 用pi raspberry登录ssh改密码
+	静态IP https://blog.csdn.net/lms99251/article/details/87975486
+	安装samba共享文件夹 https://www.jianshu.com/p/0fb0638fa061
+2 安装pip https://blog.csdn.net/qq_36588941/article/details/89839912 
+3 卸载cmake旧版本 https://www.cnblogs.com/weiqinglan/p/6007596.html?utm_source=itdadao&utm_medium=referral
+	安装cmake3.4 https://blog.csdn.net/lzlyz9999/article/details/53112700  cmake版本不要太高
+4 安装opencv  依赖https://blog.csdn.net/kyokozan/article/details/79192646 
+	 依赖https://blog.csdn.net/ygxqt/article/details/79944136 
+	2.4.13http://www.voidcn.com/article/p-ulryhijs-bph.html
+	3.4https://blog.csdn.net/leaves_joe/article/details/67656340
+	dumpfullversion问题https://www.jianshu.com/p/7d117fa4924f
+	version问题https://blog.csdn.net/mysea2004/article/details/72566730
+	stdlib.h问题https://blog.csdn.net/xinyu391/article/details/72867510
+	使用命令：cmake -D CMAKE_BUILD_TYPE=RELEASE -DWITH_LIBV4L=ON -D CMAKE_INSTALL_PREFIX=/usr/local ..
+	
+5 安装mjpg-streamer https://blog.csdn.net/qq_41923622/article/details/88366185
+	cd /home/pi 
+	/usr/local/bin/mjpg_streamer -i "/usr/local/lib/mjpg-streamer/input_uvc.so -n -f 30 -r 1280x720" -o "/usr/local/lib/mjpg-streamer/output_http.so -p 8080 -w /usr/local/share/mjpg-streamer/www"
+	即可UDP输出视频
+6 安装fswebcam https://blog.csdn.net/qq_41923622/article/details/86554114
+	fswebcam test.jpg即可拍一张照片
+7 外接硬盘 https://blog.csdn.net/huayucong/article/details/48812573
+8 下载摄像头采集源码 git clone https://github.com/yijiesun/pi4B_work.git
+9 解决pthread问题 https://github.com/facebook/Surround360/issues/3
+10 安装花生壳http://service.oray.com/question/2680.html
+	或者nat123 http://www.nat123.com/pages_17_600.jsp
+	cd /home/pi/nat123/ && mono  nat123linux.sh service &  启动
+	ps  -ef|grep  nat123 查看nat123运行状态
+	定时启动任务 https://blog.csdn.net/buster2014/article/details/46349497
+11 开机自启 https://www.jianshu.com/p/86adb6d5347b/
+12 超频 https://www.oschina.net/translate/how-to-overclock-raspberry-pi
+
+配置
+dhcpcd.conf(有线网静态IP)
+	interface eth0
+	inform 192.168.8.112
+	static routers=192.168.8.1
+	static domain_name_servers=114.114.114.114
+
+fstab(挂载硬盘)
+	hei
+	UUID="50c1a5ff-631e-a04a-ba4f-93e45f771ee7"   /home/pi/work/westdata  auto  rw,defaults  
+	bai
+	UUID="202d10fe-17b1-474a-8702-6cfeca68a0a0"   /home/pi/work/westdata  auto  rw,defaults  
+	
+rc.local(开机自启)
+	su pi -c "exec /home/pi/work/camre_capture_by_frame/sh/boot.sh"
+	exit 0
+	
+var/spool/cron/crontabs/root(定时任务)
+	0 8 * * * sudo sh /home/pi/work/camre_capture_by_frame/sh/everyday.sh
+	
+wpa_supplicant.conf(wifi配置)
+	ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+	update_config=1
+	country=CN
+	network={
+		ssid="HUAWEI-SJ2V6Y"
+		psk="12345678"
+		key_mgmt=WPA-PSK
+		priority=3
+	}
+	network={
+		ssid="HUAWEI-P30-PRO"
+		psk="11223344"
+		priority=4
+	}
+	network={
+		ssid="syj"
+		psk="~!@_qw123ASD.{}"
+		key_mgmt=WPA-PSK
+		priority=2
+	}
+	network={
+		ssid="syj2"
+		psk="~!@_qw123ASD.{}"
+		key_mgmt=WPA-PSK
+		priority=1
+	}
+	
+
+	WIFI配置
+hei     2
+passwd: pi  2
+wifi：动态
+lan：192.168.8.112
+
+bai     1
+passwd: pi  1
+wifi：动态
+lan：192.168.8.111
+
+华为B315无线路由器
+admin
+s~!@_qw123ASD.{}
+
+wifi
+syj
+~!@_qw123ASD.{}
+
+oray花生壳
+o1234ray
+oray123
